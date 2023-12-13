@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>RSA</title>
+</head>
+
+<body>
+    <div class="title">
+        <div class="left" data-aos="fade-up">
+            <img src="password.png" class="password">
+        </div>
+        <div class="right" data-aos="fade-up">
+            <h1 class="rsa">RSA</h1>
+            <h3 class="rsa_under">소수를 이용한 최고의 암호 체계</h3>
+        </div>
+    </div>
+    <div class="explain" data-aos="fade-up">
+        <div>
+            <h1 class="rsa">RSA란?</h1>
+        </div>
+        <div>
+            <h3 class="rsa_under"> 신용카드 번호나 각종 암호에 RSA 알고리즘이 사용된다.<br>이 알고리즘은 <strong>무한한 소수</strong>를 이용한 암호화
+                시스템이다.<br>
+                소수의 개수는 무한하기 때문에 암호코드를 두 소수의 곱으로 나타낸다.<br> 암호키를 알기 위해서 소인수 분해 해야하지만,<br>
+                <strong>소인수 분해가 매우 어려워 해독하기 힘들다</strong>는 장점 덕분에 널리 사용된다.
+            </h3>
+        </div>
+    </div>
+    <div class="explain" data-aos="fade-up">
+        <div>
+            <h1 class="rsa">RSA 암호화 방식</h1>
+        </div>
+        <div>
+            <h3 class="rsa_under">
+                1. 두 개의 소수 p, q<br>
+                2. N = pq<br>
+                3. N의 오일러 피함수 값 계산<br>
+                <font color=#282828>3. </font>ϕ(N) : N 이하의 자연수 중 서로소인 수의 개수<br>
+                <font color=#282828>3. </font>ϕ(N) = (p-1)(q-1)<br>
+                4. e : ϕ(N)보다 작고 ϕ(N)과 서로소인 자연수<br>
+                5. (보내려는 수)의 e 제곱을 N으로 나눈 나머지가 같은 수로 암호화
+            </h3>
+        </div>
+        <h2 class="rsa_code">RSA 암호화 해보기</h2>
+        <div style="display:flex">
+            <div>
+                <div class="code">
+                    <input class="input" id="number1" onchange="result()" type="text" required>
+                    <label>암호화할 수</label>
+                    <span></span>
+                </div>
+                <div class="code">
+                    <input class="input" id="number2" onchange="result()" type="text" required>
+                    <label>소수</label>
+                    <span></span>
+                </div>
+                <div class="code">
+                    <input class="input" id="number3" onchange="result()" type="text" required>
+                    <label>서로 다른 소수</label>
+                    <span></span>
+                </div>
+            </div>
+            <div class="result">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="footer">
+            <p>Copyright © 2023 math performance 임현지 All rights reserved.</p>
+        </div>
+        <div class="address">
+            <address>contact whenever you can. h_s_posan23_1517@dge.go.kr</address>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="rsa.js"></script>
+</body>
+
+</html>

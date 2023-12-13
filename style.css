@@ -1,0 +1,176 @@
+* {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: #282828;
+}
+
+strong {
+    color: #f6ff7f;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+.left {
+    float: left;
+    display: flex;
+    padding-right: 15px;
+}
+
+.password {
+    width: 65%;
+}
+
+.right {
+    padding-top: 25px;
+    padding-right: -30px;
+}
+
+.rsa {
+    color: #f6ff7f;
+    font-size: 75px;
+}
+
+.rsa_under {
+    color: #fff;
+    font-size: 35px;
+    margin-top: -25px;
+}
+
+.explain {
+    justify-content: center;
+    padding: 200px 150px 180px 150px;
+}
+
+.rsa_code {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    color: #f6ff7f;
+    font-size: 75px;
+}
+
+.code {
+    position: relative;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.input {
+    font-size: 20px;
+    color: #fff;
+    width: 300px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+}
+
+.input::placeholder {
+    color: #aaaaaa;
+}
+
+.input:focus {
+    outline: none;
+}
+
+span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /* right로만 바꿔주면 오 - 왼 */
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 20px;
+    bottom: 8px;
+    transition: all .2s;
+}
+
+.input:focus~label,
+.input:valid~label {
+    font-size: 16px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+}
+
+.input:focus~span,
+.input:valid~span {
+    width: 100%;
+}
+
+.submit {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: #aaaaaa;
+    width: 80px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #282828;
+    z-index: 5;
+}
+
+.result {
+    margin: 80px auto auto 100px;
+    padding-left: 20px;
+    border-left: solid 3px #666;
+    text-align: center;
+    justify-content: center;
+}
+
+#result {
+    height: 200px;
+    color: #fff;
+    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 160px auto auto 200px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #ffffff39;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    color: #ffffff39;
+    margin-top: -15px;
+}
+
+.foot {
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
